@@ -26,9 +26,10 @@ const create_item = () => {
   Event.dataTransfer.clearData());
   let input=document.createElement('input');
   item.appendChild(input);
+
   let save_btn=document.createElement('button');
   save_btn.innerHTML= 'save';
-  save_btn.addEventListener('click', () =>
+  save_btn.addEventListener('click', ()=>
   {error.innerHTML ='';
   if(input.value !== '') {
     order +=1;
